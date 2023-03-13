@@ -19,25 +19,29 @@
 
     header div.thumb {
       background-color: red;
+      background-image: url("./SakuraSFZIII.gif");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       border-radius: 50%;
       width: 100px;
       height: 100px;
       flex: none;
-      margin: 10px 55px;
-      transform: scale(2);
-      transition: 3s;
+      margin: 10px 40px;
+      border: 2px solid black;
+      transform: scale(1.6);
     }
 
     main {
       display: flex;
-      margin-top: 50px;
+      margin-top: 20px;
     }
 
     main div.menu {
       width: 200px;
       background: black;
       flex: none;
-      transition: .3s;
+      transition: 3s;
     }
 
     main article {
@@ -52,43 +56,23 @@
       float: right;
     }
 
-
-    /* ---------------------------------------------- */
-
+    /* --------------------------------------------------- */
+    
     main div.menu:hover {
-      background-color: green;
+      background-color: red;
     }
 
-    header:hover div.thumb {
-      transform: scale(1) translateX(100%);
+    header:hover h1 {
+      color: pink;
     }
-
-    main article p:nth-child(3) {
-      /* :first-child */
-      /* :last-child */
-      color: red;
-    }
-
-
-    div.zzz > div {
-      color: red;
-    } 
-
-    div.zzz input:checked + div {
-      color: green;
-    }
-
+    
   </style>
 </head>
 
 <body>
-  <div class="zzz">
-    <input type="checkbox">
-    <div>oie</div>
-  </div>
-
   <header>
-    <div class="thumb"></div>
+    <div class="thumb">
+    </div>
     <div class="info">
       <h1>Daniel de Andrade Varela</h1>
       <p>
@@ -99,13 +83,13 @@
   <main>
     <div class="menu">
       <nav>
-        <a href="http://google.com">Visite um site bem bacanaaa</a>
-        <a href="#teste">ir até o título teste</a>
+        <a href="http://google.com">link para um site maroto</a>
+        <a href="#teste">rolar até a sessão teste</a>
       </nav>
     </div>
     <article>
       <p>
-        <img src="SakuraSFZIII.gif" alt="gif animado da skura do SFZ III dançando após vitória" title="Sakura SFZ III">
+        <img src="./SakuraSFZIII.gif" alt="sakura do Street Fighter Zero/Alpha III fazendo sua dança da vitória" title="Sakura SFZIII">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi, magni fugit fuga modi, a inventore,
         explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio iusto suscipit iure repudiandae eaque
         voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut placeat neque autem iure ab
@@ -139,7 +123,7 @@
         illo, sunt libero assumenda eligendi esse, enim tempora totam inventore exercitationem?
       </p>
       <p>
-        <img src="SakuraSFZIII.gif" alt="gif animado da skura do SFZ III dançando após vitória" title="Sakura SFZ III">
+        <img src="./SakuraSFZIII.gif" alt="sakura do Street Fighter Zero/Alpha III fazendo sua dança da vitória" title="Sakura SFZIII">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi, magni fugit fuga modi, a inventore,
         explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio iusto suscipit iure repudiandae eaque
         voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut placeat neque autem iure ab
@@ -173,7 +157,7 @@
         illo, sunt libero assumenda eligendi esse, enim tempora totam inventore exercitationem?
       </p>
       <p>
-        <img src="SakuraSFZIII.gif" alt="gif animado da skura do SFZ III dançando após vitória" title="Sakura SFZ III">
+        <img src="./SakuraSFZIII.gif" alt="sakura do Street Fighter Zero/Alpha III fazendo sua dança da vitória" title="Sakura SFZIII">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi, magni fugit fuga modi, a inventore,
         explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio iusto suscipit iure repudiandae eaque
         voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut placeat neque autem iure ab
@@ -207,7 +191,7 @@
         illo, sunt libero assumenda eligendi esse, enim tempora totam inventore exercitationem?
       </p>
       <p>
-        <img src="SakuraSFZIII.gif" alt="gif animado da skura do SFZ III dançando após vitória" title="Sakura SFZ III">
+        <img src="./SakuraSFZIII.gif" alt="sakura do Street Fighter Zero/Alpha III fazendo sua dança da vitória" title="Sakura SFZIII">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi, magni fugit fuga modi, a inventore,
         explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio iusto suscipit iure repudiandae eaque
         voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut placeat neque autem iure ab
@@ -241,7 +225,7 @@
         illo, sunt libero assumenda eligendi esse, enim tempora totam inventore exercitationem?
       </p>
       <p>
-        <img src="SakuraSFZIII.gif" alt="gif animado da skura do SFZ III dançando após vitória" title="Sakura SFZ III">
+        <img src="./SakuraSFZIII.gif" alt="sakura do Street Fighter Zero/Alpha III fazendo sua dança da vitória" title="Sakura SFZIII">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi, magni fugit fuga modi, a inventore,
         explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio iusto suscipit iure repudiandae eaque
         voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut placeat neque autem iure ab
@@ -275,7 +259,7 @@
         illo, sunt libero assumenda eligendi esse, enim tempora totam inventore exercitationem?
       </p>
       <p>
-        <img src="SakuraSFZIII.gif" alt="gif animado da skura do SFZ III dançando após vitória" title="Sakura SFZ III">
+        <img src="./SakuraSFZIII.gif" alt="sakura do Street Fighter Zero/Alpha III fazendo sua dança da vitória" title="Sakura SFZIII">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi, magni fugit fuga modi, a inventore,
         explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio iusto suscipit iure repudiandae eaque
         voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut placeat neque autem iure ab
@@ -309,43 +293,43 @@
         illo, sunt libero assumenda eligendi esse, enim tempora totam inventore exercitationem?
       </p>
       <p>
-        <h1>Teste</h1>
+        <img src="./SakuraSFZIII.gif" alt="sakura do Street Fighter Zero/Alpha III fazendo sua dança da vitória" title="Sakura SFZIII">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi, magni fugit fuga modi, a inventore,
+        explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio iusto suscipit iure repudiandae eaque
+        voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut placeat neque autem iure ab
+        voluptate dolorem ea nulla itaque vitae iste sequi nobis, sapiente pariatur enim. Debitis, alias vel! Lorem
+        ipsum dolor sit, amet consectetur adipisicing elit. Ex aliquid voluptatibus quis nesciunt fuga, odio reiciendis
+        dignissimos, nihil reprehenderit error quasi eum quia! Repellat, voluptatem assumenda dolore fuga illo aliquid.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nulla perferendis autem dolorum, doloribus
+        officiis quam dolorem aspernatur ad, repudiandae quos, ipsum molestiae atque assumenda temporibus soluta. Animi,
+        repudiandae iste! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sequi sit accusantium
+        voluptas vitae quaerat ullam quo nobis saepe illo, sunt libero assumenda eligendi esse, enim tempora totam
+        inventore exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi, magni fugit
+        fuga modi, a inventore, explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio iusto suscipit iure
+        repudiandae eaque voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut placeat
+        neque autem iure ab voluptate dolorem ea nulla itaque vitae iste sequi nobis, sapiente pariatur enim. Debitis,
+        alias vel! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex aliquid voluptatibus quis nesciunt fuga,
+        odio reiciendis dignissimos, nihil reprehenderit error quasi eum quia! Repellat, voluptatem assumenda dolore
+        fuga illo aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nulla perferendis autem
+        dolorum, doloribus officiis quam dolorem aspernatur ad, repudiandae quos, ipsum molestiae atque assumenda
+        temporibus soluta. Animi, repudiandae iste! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        sequi sit accusantium voluptas vitae quaerat ullam quo nobis saepe illo, sunt libero assumenda eligendi esse,
+        enim tempora totam inventore exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+        nisi, magni fugit fuga modi, a inventore, explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio
+        iusto suscipit iure repudiandae eaque voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatum ut placeat neque autem iure ab voluptate dolorem ea nulla itaque vitae iste sequi nobis, sapiente
+        pariatur enim. Debitis, alias vel! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex aliquid
+        voluptatibus quis nesciunt fuga, odio reiciendis dignissimos, nihil reprehenderit error quasi eum quia!
+        Repellat, voluptatem assumenda dolore fuga illo aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Eos nulla perferendis autem dolorum, doloribus officiis quam dolorem aspernatur ad, repudiandae quos,
+        ipsum molestiae atque assumenda temporibus soluta. Animi, repudiandae iste! Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Blanditiis sequi sit accusantium voluptas vitae quaerat ullam quo nobis saepe
+        illo, sunt libero assumenda eligendi esse, enim tempora totam inventore exercitationem?
+      </p>
+      <p>
         <a name="teste"></a>
-        <img src="SakuraSFZIII.gif" alt="gif animado da skura do SFZ III dançando após vitória" title="Sakura SFZ III">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi, magni fugit fuga modi, a inventore,
-        explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio iusto suscipit iure repudiandae eaque
-        voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut placeat neque autem iure ab
-        voluptate dolorem ea nulla itaque vitae iste sequi nobis, sapiente pariatur enim. Debitis, alias vel! Lorem
-        ipsum dolor sit, amet consectetur adipisicing elit. Ex aliquid voluptatibus quis nesciunt fuga, odio reiciendis
-        dignissimos, nihil reprehenderit error quasi eum quia! Repellat, voluptatem assumenda dolore fuga illo aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nulla perferendis autem dolorum, doloribus
-        officiis quam dolorem aspernatur ad, repudiandae quos, ipsum molestiae atque assumenda temporibus soluta. Animi,
-        repudiandae iste! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sequi sit accusantium
-        voluptas vitae quaerat ullam quo nobis saepe illo, sunt libero assumenda eligendi esse, enim tempora totam
-        inventore exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi, magni fugit
-        fuga modi, a inventore, explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio iusto suscipit iure
-        repudiandae eaque voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut placeat
-        neque autem iure ab voluptate dolorem ea nulla itaque vitae iste sequi nobis, sapiente pariatur enim. Debitis,
-        alias vel! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex aliquid voluptatibus quis nesciunt fuga,
-        odio reiciendis dignissimos, nihil reprehenderit error quasi eum quia! Repellat, voluptatem assumenda dolore
-        fuga illo aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nulla perferendis autem
-        dolorum, doloribus officiis quam dolorem aspernatur ad, repudiandae quos, ipsum molestiae atque assumenda
-        temporibus soluta. Animi, repudiandae iste! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-        sequi sit accusantium voluptas vitae quaerat ullam quo nobis saepe illo, sunt libero assumenda eligendi esse,
-        enim tempora totam inventore exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-        nisi, magni fugit fuga modi, a inventore, explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio
-        iusto suscipit iure repudiandae eaque voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Voluptatum ut placeat neque autem iure ab voluptate dolorem ea nulla itaque vitae iste sequi nobis, sapiente
-        pariatur enim. Debitis, alias vel! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex aliquid
-        voluptatibus quis nesciunt fuga, odio reiciendis dignissimos, nihil reprehenderit error quasi eum quia!
-        Repellat, voluptatem assumenda dolore fuga illo aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing
-        elit. Eos nulla perferendis autem dolorum, doloribus officiis quam dolorem aspernatur ad, repudiandae quos,
-        ipsum molestiae atque assumenda temporibus soluta. Animi, repudiandae iste! Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Blanditiis sequi sit accusantium voluptas vitae quaerat ullam quo nobis saepe
-        illo, sunt libero assumenda eligendi esse, enim tempora totam inventore exercitationem?
-      </p>
-      <p>
-        <img src="SakuraSFZIII.gif" alt="gif animado da skura do SFZ III dançando após vitória" title="Sakura SFZ III">
+        <h1>Teste</h1>
+        <img src="./SakuraSFZIII.gif" alt="sakura do Street Fighter Zero/Alpha III fazendo sua dança da vitória" title="Sakura SFZIII">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi, magni fugit fuga modi, a inventore,
         explicabo eligendi adipisci nemo neque. A, consectetur! Distinctio iusto suscipit iure repudiandae eaque
         voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut placeat neque autem iure ab
