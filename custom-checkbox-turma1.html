@@ -3,80 +3,76 @@
 
 <head>
   <meta charset='utf-8'>
-  <title>Custom-Checkbox</title>
+  <title>Page Title</title>
   <style>
     label.custom-checkbox>div {
-      width: 10vw;
-      height: 5vw;
+      border: 2px solid black;
+      width: 20vw;
+      height: 10vw;
       position: relative;
-      border-radius: 3vw;
       background-color: black;
-      border: 1px solid black;
+      border-radius: 5vw;
     }
 
     label.custom-checkbox>div>div {
-      background-color: purple;
-      width: 50%;
+      background-color: green;
       height: 100%;
+      width: 50%;
       position: absolute;
       left: 0;
       top: 0;
-      transition: .3s;
       border-radius: 50%;
+      transition: .3s;
     }
 
-    label.custom-checkbox input:checked+div>div {
-      background-color: white;
-      left: 50%;
-    }
-
-    label.custom-checkbox input {
+    label.custom-checkbox>input {
       display: none;
+    }
+
+    label.custom-checkbox>input:checked+div>div {
+      background-color: pink;
+      left: 50%;
     }
   </style>
 </head>
 
 <body>
-  <div>
-    <label class="custom-checkbox">
-      <input type="checkbox">
-      <div>
-        <div></div>
-      </div>
-    </label>
-  </div>
-  <div>
-    <label class="custom-checkbox">
-      <input type="checkbox">
-      <div>
-        <div></div>
-      </div>
-    </label>
-  </div>
-  <div>
-    <label class="custom-checkbox">
-      <input type="checkbox">
-      <div>
-        <div></div>
-      </div>
-    </label>
-  </div>
-  <div>
-    <label class="custom-checkbox">
-      <input type="checkbox">
-      <div>
-        <div></div>
-      </div>
-    </label>
-  </div>
-  <div>
-    <label class="custom-checkbox">
-      <input type="checkbox">
-      <div>
-        <div></div>
-      </div>
-    </label>
-  </div>
+
+  <label class="custom-checkbox">
+    <input type="checkbox">
+    <div>
+      <div></div>
+    </div>
+  </label>
+
+  <label class="custom-checkbox">
+    <input type="checkbox">
+    <div>
+      <div></div>
+    </div>
+  </label>
+
+  <label class="custom-checkbox">
+    <input type="checkbox">
+    <div>
+      <div></div>
+    </div>
+  </label>
+
+  <label class="custom-checkbox">
+    <input type="checkbox">
+    <div>
+      <div></div>
+    </div>
+  </label>
+
+  <label class="custom-checkbox">
+    <input type="checkbox">
+    <div>
+      <div></div>
+    </div>
+  </label>
+
 </body>
 
 </html>
