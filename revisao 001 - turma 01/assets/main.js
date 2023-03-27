@@ -6,6 +6,5 @@ function mudarTexto() {
   txt.innerText = inp.value.toUpperCase() + "!!!"
 }
 
-
 bt.onclick = mudarTexto
 inp.onkeyup = mudarTexto
