@@ -3,8 +3,8 @@
 ## Revisão I
 
 - HTTP - Hypertext Transfer Protocol
-- HTML - Hypertext Markup Language 
+- HTML - Hypertext Markup Language
 - CSS - Cascadian Style Sheet
 - Javascript/ECMAScript - Linguagem de Programação 
 - DOM - Document Object Model
-- QuerySelector - 
+- QuerySelector -

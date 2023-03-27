@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(106, 106, 106);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  background-color: #f08080;
+  padding: 20px;
+  border: 2px solid #f06d6d;
+  border-radius: 10px;
+  width: 50vw;
+}
+
+main > div {
+  display: flex;
+}
+
+main > div > input {
+  flex-grow: 1;
+}
+
+main > div > button,
+main > div > input {
+  border: none;
+  outline: none;
+}
+
+main > div > button:focus,
+main > div > input:focus {
+  background-color: rgb(255, 160, 122);
+}
