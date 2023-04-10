@@ -1,0 +1,103 @@
+/* grid vs flex */  
+
+.test {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 2px solid red;
+  padding: 10px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.test > div {
+  background-color: green;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* transition */
+
+.test-transition > div {
+  transition: 3s background;
+}
+
+.test-transition > div:hover {
+  background-color: red;
+}
+
+/* animation */ 
+
+@keyframes corezinhas {
+  50% {
+    background-color: yellow;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+
+.test-animation div:hover {
+  animation: corezinhas 3s linear infinite;
+}
+
+/*  */
+
+nav {
+  border: 1px solid #badc58;
+  background-color: #6ab04c;
+  border-radius: 5px;
+}
+
+nav :is(ul, li) {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 5px;
+  transition: .3s;
+}
+
+nav li:hover {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:active {
+  color: blue;
+}
+
+nav li a:visited {
+  color: red;
+}
+
+nav > ul {
+  position: relative;
+}
+
+nav ul > li > ul {
+  position: absolute;
+  background-color: black;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+} 
+
+nav ul > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav ul > li:has(ul)::after {
+  content: ">";
+}
