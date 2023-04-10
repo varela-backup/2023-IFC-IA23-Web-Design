@@ -1,0 +1,112 @@
+/* */
+
+.test {
+  background: lightblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.test > div {
+  background: lightcoral;
+  color: white;
+  border: 1px solid white;
+  height: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* transition */
+
+.test-transition > div {
+  transition: 3s;
+}
+
+.test-transition > div:hover {
+  background-color: blueviolet;
+}
+
+/* animation */
+
+@keyframes corzinhas {
+  50% {
+    background-color: greenyellow;
+  }
+
+  100% {
+    background-color: blueviolet;
+  }
+}
+
+.test-animation > div:hover {
+  animation: corzinhas 3s ease-in-out infinite;
+}
+
+/* */
+
+nav {
+  background-color: #130f40;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+nav :is(ul, li) {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li {
+  padding: 10px;
+  transition: .3s;
+}
+
+nav ul li:hover {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:active {
+  color: yellowgreen;
+}
+
+nav a:visited {
+  color: red;
+}
+
+nav > ul > li {
+  position: relative;
+}
+
+nav ul li:has(ul)::after {
+  content: ">";
+  color: white;
+}
+
+nav > ul > li > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+nav > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav > ul > li > ul > li {
+  display: block;
+}
