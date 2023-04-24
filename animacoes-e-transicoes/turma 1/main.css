@@ -7,7 +7,10 @@ nav {
   background: var(--nav-background);
   border: var(--nav-border);
   margin-bottom: 1em;
-  font-size: 2rem; 
+  font-size: 1rem; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav :is(ul, li) {
