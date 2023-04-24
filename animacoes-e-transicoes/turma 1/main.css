@@ -69,3 +69,7 @@ nav > ul > li:hover > ul {
 nav > ul > li > ul > li {
   display: block;
 }
+
+nav > .logo {
+  height: 5rem;
+}
