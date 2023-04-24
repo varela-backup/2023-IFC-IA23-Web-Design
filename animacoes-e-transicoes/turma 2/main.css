@@ -4,10 +4,14 @@
 }
 
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: var(--nav-border);
   background: var(--nav-background);
   border-radius: 5px;
   font-size: 3rem;
+  padding: .5em;
 }
 
 nav :is(ul, li) {
@@ -61,4 +65,8 @@ nav ul > li:hover > ul {
 
 nav ul > li:has(ul)::after {
   content: ">";
+}
+
+nav > .logo {
+  height: 5rem;
 }

@@ -1,57 +1,13 @@
-/* */
-
-.test {
-  background: lightblue;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
+html {
+  --nav-background: #ED4C67;
+  --nav-border: .5rem solid #B53471;
 }
-
-.test > div {
-  background: lightcoral;
-  color: white;
-  border: 1px solid white;
-  height: 100px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* transition */
-
-.test-transition > div {
-  transition: 3s;
-}
-
-.test-transition > div:hover {
-  background-color: blueviolet;
-}
-
-/* animation */
-
-@keyframes corzinhas {
-  50% {
-    background-color: greenyellow;
-  }
-
-  100% {
-    background-color: blueviolet;
-  }
-}
-
-.test-animation > div:hover {
-  animation: corzinhas 3s ease-in-out infinite;
-}
-
-/* */
 
 nav {
-  background-color: #130f40;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  background: var(--nav-background);
+  border: var(--nav-border);
+  margin-bottom: 1em;
+  font-size: 2rem; 
 }
 
 nav :is(ul, li) {
@@ -62,7 +18,7 @@ nav :is(ul, li) {
 }
 
 nav ul li {
-  padding: 10px;
+  padding: .5em;
   transition: .3s;
 }
 
