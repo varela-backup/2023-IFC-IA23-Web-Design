@@ -1,55 +1,13 @@
-/* grid vs flex */  
-
-.test {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  border: 2px solid red;
-  padding: 10px;
-  gap: 10px;
-  margin-bottom: 10px;
+:root {
+  --nav-background: #ED4C67;
+  --nav-border: .5rem solid #B53471;
 }
-
-.test > div {
-  background-color: green;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-/* transition */
-
-.test-transition > div {
-  transition: 3s background;
-}
-
-.test-transition > div:hover {
-  background-color: red;
-}
-
-/* animation */ 
-
-@keyframes corezinhas {
-  50% {
-    background-color: yellow;
-  }
-
-  100% {
-    background-color: red;
-  }
-}
-
-.test-animation div:hover {
-  animation: corezinhas 3s linear infinite;
-}
-
-/*  */
 
 nav {
-  border: 1px solid #badc58;
-  background-color: #6ab04c;
+  border: var(--nav-border);
+  background: var(--nav-background);
   border-radius: 5px;
+  font-size: 3rem;
 }
 
 nav :is(ul, li) {
@@ -81,16 +39,19 @@ nav li a:visited {
   color: red;
 }
 
-nav > ul {
+nav > ul > li {
   position: relative;
 }
 
 nav ul > li > ul {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   background-color: black;
   visibility: hidden;
   opacity: 0;
   transition: .3s;
+  left: 0;
 } 
 
 nav ul > li:hover > ul {
