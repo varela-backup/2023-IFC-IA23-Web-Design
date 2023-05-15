@@ -70,3 +70,35 @@ nav ul > li:has(ul)::after {
 nav > .logo {
   height: 5rem;
 }
+
+main {
+  border: 5px solid red;
+  padding: 1rem;
+  margin-block:   2rem;
+}
+
+/* --✀-------------------------------------------------------------------- */
+/* GALERIA */
+
+div.galeria {
+  border: 5px solid lightsalmon;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 400px);
+  gap: 2rem;
+}
+
+div.galeria > div {
+  background-color: lightgreen;
+}
+
+div.galeria > :nth-child(1) {
+  background-color: red;
+  
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}

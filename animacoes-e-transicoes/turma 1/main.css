@@ -73,3 +73,44 @@ nav > ul > li > ul > li {
 nav > .logo {
   height: 5rem;
 }
+
+main {
+  border: 5px solid red;
+  padding: 1rem;
+}
+
+/* --✀-------------------------------------------------------------------- */
+/* GALERIA */
+
+div.galeria {
+  border: 5px solid lightgreen;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 1rem;
+}
+
+div.galeria > div {
+  background-color: lightpink;
+}
+
+div.galeria > :nth-child(1) {
+  background-color: red;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+div.galeria > :nth-child(4) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+div.galeria > :nth-child(5) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
