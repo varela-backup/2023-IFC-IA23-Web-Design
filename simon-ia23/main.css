@@ -1,0 +1,49 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100vh;
+  border: 12px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.genius {
+  background-color: lightcoral;
+  width: 80vmin;
+  height: 80vmin;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+div.genius> :nth-child(1) {
+  border-radius: 100% 0 0 0;
+  background-color: lightgreen;
+}
+
+div.genius> :nth-child(2) {
+  border-radius: 0 100% 0 0;
+  background-color: lightskyblue;
+}
+
+div.genius> :nth-child(3) {
+  background-color: lightpink;
+  border-radius: 0 0 0 100%;
+}
+
+div.genius> :nth-child(4) {
+  background-color: lightsalmon;
+  border-radius: 0 0 100% 0;
+}
+
+div.pontuacao {
+  background-color: blue;
+  position: absolute;
+  inset: 30%;
+  border-radius: 50%;
+}
