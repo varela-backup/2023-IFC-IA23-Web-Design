@@ -2,14 +2,14 @@ body {
   box-sizing: border-box;
   margin: 0;
   height: 100vh;
-  border: 12px solid green;
+  /* border: 12px solid green; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 div.genius {
-  background-color: lightcoral;
+  background-color: black;
   width: 80vmin;
   height: 80vmin;
   display: grid;
@@ -21,28 +21,52 @@ div.genius {
   position: relative;
 }
 
+div.genius> *:not(.pontuacao) {
+  cursor: pointer;
+}
+
 div.genius> :nth-child(1) {
   border-radius: 100% 0 0 0;
-  background-color: lightgreen;
+  background-color: rgb(0, 100, 0);
+}
+
+div.genius> :nth-child(1).on,
+div.genius> :nth-child(1):hover {
+  background-color: rgb(0, 189, 0);
 }
 
 div.genius> :nth-child(2) {
   border-radius: 0 100% 0 0;
-  background-color: lightskyblue;
+  background-color: rgb(100, 0, 0);
+}
+
+div.genius> :nth-child(2).on,
+div.genius> :nth-child(2):hover {
+  background-color: rgb(255, 0, 0);
 }
 
 div.genius> :nth-child(3) {
-  background-color: lightpink;
+  background-color: rgb(179, 179, 0);
   border-radius: 0 0 0 100%;
 }
 
+div.genius> :nth-child(3).on,
+div.genius> :nth-child(3):hover {
+  background-color: rgb(255, 255, 0);
+}
+
 div.genius> :nth-child(4) {
-  background-color: lightsalmon;
+  background-color: rgb(0, 0, 100);
   border-radius: 0 0 100% 0;
 }
 
+div.genius> :nth-child(4).on,
+div.genius> :nth-child(4):hover {
+  background-color: rgb(0, 0, 180);
+}
+
 div.pontuacao {
-  background-color: blue;
+  background-color: black;
   position: absolute;
   inset: 30%;
   border-radius: 50%;
