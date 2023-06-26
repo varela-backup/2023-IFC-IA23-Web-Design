@@ -21,7 +21,8 @@ div.genius {
   position: relative;
 }
 
-div.genius>*:not(.pontuacao) {
+/* :not(.pontuacao) */
+div.genius>* {
   cursor: pointer;
 }
 
@@ -70,4 +71,8 @@ div.pontuacao {
   position: absolute;
   inset: 30%;
   border-radius: 50%;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 4rem;
 }

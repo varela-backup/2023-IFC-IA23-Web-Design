@@ -1,6 +1,6 @@
 let genius = document.querySelector("div.genius")
 let bts = genius.querySelectorAll("*:not(.pontuacao)")
-let pontuacao = document.querySelector("div.genius > .pontuacao")
+let pontuacao = genius.querySelector(".pontuacao")
 let sequencia = [rng(), rng()]
 
 let velocidade = 500
