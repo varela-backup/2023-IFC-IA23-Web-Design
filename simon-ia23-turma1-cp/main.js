@@ -1,9 +1,14 @@
 let genius = document.querySelector("div.genius")
 let bts = genius.querySelectorAll("*:not(.pontuacao)")
 let pontuacao = genius.querySelector(".pontuacao")
-let sequencia = [0, 1, 3, 2]
-
+let sequencia = [rng(), rng()]
+let currentIndex = 0
+let estado = "apresentando sequencia"
 let velocidade = 500
+
+function rng() {
+  return Math.floor(Math.random() * 4)
+}
 
 function ligar(item) {
   bts[item].classList.add("on")
@@ -36,8 +41,6 @@ function apresentarSequencia() {
   })
 }
 
-let currentIndex = 0
-
 genius.addEventListener("click", (ev) => {
   if (estado != "jogando")
     return
@@ -61,9 +64,8 @@ genius.addEventListener("click", (ev) => {
   }
 })
 
-let estado = "apresentando sequencia"
-
 async function iniciar() {
+  sequencia.push(rng())
   if (estado == "apresentando sequencia") {
     estado = "..."
     pontuacao.innerHTML = "..."
