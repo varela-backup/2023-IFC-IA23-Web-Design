@@ -21,8 +21,7 @@ div.genius {
   position: relative;
 }
 
-/* :not(.pontuacao) */
-div.genius>* {
+div.genius>*:not(.pontuacao) {
   cursor: pointer;
 }
 
@@ -68,11 +67,7 @@ div.genius> :nth-child(4):hover {
 
 div.pontuacao {
   background-color: black;
-  color: white;
   position: absolute;
   inset: 30%;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 5rem;
 }
