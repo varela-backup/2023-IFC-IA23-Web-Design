@@ -1,0 +1,17 @@
+[
+  {
+    "pergunta": "Quem foi o ultimo aluno a entrar na IA23?",
+    "alternativas": ["José", "Walter", "Bruno", "Livia", "Pedro", "Nicole", "Rian", "Rodrigo", "João", "Vagner"],
+    "resposta": 5
+  },
+  {
+    "pergunta": "Qual é a idade do professor Daniel Varela?",
+    "alternativas": [25, 27, 30, 32, 34, 36, 38, 40, 42, 44],
+    "resposta": 5
+  },
+  {
+    "pergunta": "Quem é o aluno mais velho da IA23?",
+    "alternativas": ["José", "Walter", "Bruno", "Livia", "Pedro", "Nicole", "Rian", "Rodrigo", "João", "Vagner"],
+    "resposta": 9
+  }
+]

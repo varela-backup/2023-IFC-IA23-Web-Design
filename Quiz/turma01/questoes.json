@@ -1,0 +1,12 @@
+[
+  {
+    "pergunta": "Quantos anos o professor Varela tem?",
+    "correta": 6,
+    "alternativas": [17, 25, 27, 30, 32, 33, 36, 37, 40, 57]
+  },
+  {
+    "pergunta": "Quem é o mais velho da IA23?",
+    "correta": 3,
+    "alternativas": ["Davi", "Gustavo", "Erika", "Livia", "Arthur", "Bruno", "Ana Julia", "Nathan", "Henrique", "Eduarda"]
+  }
+]
