@@ -1,0 +1,15 @@
+.modal-finish {
+  /* display: none; */
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0 0 0 / .9);
+  color: #FFFFFF;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.modal-finish.open {
+  opacity: 1;
+  visibility: visible;
+}
