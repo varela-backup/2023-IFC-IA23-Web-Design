@@ -28,7 +28,7 @@ async function main() {
     elPergunta.innerText = questao.pergunta
     elAlternativas.innerHTML = ""
     questao.alternativas.forEach(alt => {
-      elAlternativas.innerHTML += `<button>${alt} <strong>asdasd</strong> </button>`
+      elAlternativas.innerHTML += `<button>${alt}</button>`
     })
   }
 

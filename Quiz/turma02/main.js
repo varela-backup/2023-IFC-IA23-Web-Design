@@ -11,10 +11,14 @@ async function main() {
   function carregarPergunta(nPergunta) {
     elPergunta.innerHTML = quiz[nPergunta].pergunta
     elAlternativas.innerHTML = ""
+    
     // for (let i = 0; i < 9; i++) {
     //   elRespostas.innerHTML += `<button>${quiz[nPergunta].alternativas[i]}</button>`
     // }
-    quiz[nPergunta].alternativas.forEach(alt => elAlternativas.innerHTML += `<button>${alt}</button>`)
+
+    quiz[nPergunta]
+      .alternativas
+      .forEach(alt => elAlternativas.innerHTML += `<button>${alt}</button>`)
   }
 
   elAlternativas.addEventListener("click", ev => {

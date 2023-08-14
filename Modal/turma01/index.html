@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <style>
+    .modal {
+      display: grid;
+      place-items: center;
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0 0 0 / .5);
+      transition: .3s;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .modal.opened {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal .window {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      min-width: 50vw;
+      min-height: 50vh;
+      background-color: white;
+      border-radius: 1vw;
+      padding: 1rem;
+    }
+
+    .modal .window .close {
+      position: absolute;
+      right: -1vw;
+      top: -1vw;
+      border: none;
+      font-size: 1vw;
+      height: 4vw;
+      width: 4vw;
+      padding: 1rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .modal .window .content {
+      flex: 1;
+    }
+
+    .modal .window .actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: .5rem;
+    }
+
+    .modal .window .actions button {
+      border: none;
+      background-color: purple;
+      color: white;
+      padding: 1vw;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button>Aparece MODAL!</button>
+  <div class="modal">
+    <div class="window">
+      <button class="close">X</button>
+      <div class="content">
+        <h1>Modal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+      </div>
+      <div class="actions">
+        <button>salvar</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    const modal = document.querySelector('.modal')
+    const close = modal.querySelector('.close')
+    const open = document.querySelector('button')
+
+    open.addEventListener('click', () => {
+      modal.classList.add("opened")
+    })
+
+    close.addEventListener('click', () => {
+      modal.classList.remove("opened")
+    })
+
+    modal.addEventListener('click', (evt) => {
+      if (evt.target.classList.contains("modal")) {
+        modal.classList.remove("opened")
+      }
+    })
+  </script>
+</body>
+</html>
